@@ -4,7 +4,7 @@ import (
 	"os"
 )
 
-func main() {	// This is a placeholder for the main function.
+func main() {	
 	str := os.Args[1]
 	file, err := os.ReadFile("ascii_art/mapping.txt")
 	if err != nil {

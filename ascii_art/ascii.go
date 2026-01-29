@@ -1,15 +1,13 @@
 package ascii_art
 
-import (
-	"fmt"
-)
+
 
 func GenerateASCIIArt(text string) string {
 	// Placeholder implementation
 	return "ASCII Art for: " + text
 }
 
-func PrintBanner(str string, mapper map[rune][]string) {
+func PrintBanner(str string, mapper map[rune][]string) string {
 	//Handle  separator i.e '\n'
 strs := []string{}
 tempname := ""
@@ -30,6 +28,8 @@ for i := 0; i < len(str); i++ {
 		strs = append(strs,tempname)
 	}
 }
+
+art_output := ""
  //Start printing characters char by char: by looping into the strs
  for _, word := range strs {
 	//Loop into the height which is lines
@@ -40,18 +40,22 @@ for i := 0; i < len(str); i++ {
 			if x[0] == '\n' {
 				x = x[1:]
 			}
-			fmt.Print(x)
+			art_output += x
+			
 		}
 		}
 		if j == 7 && word == "\n"{
-		fmt.Println()
+			art_output += "\n"
 	}
 	if j< 7 && word != "\n"{
-		fmt.Println()
+		art_output += "\n"
 	}
 	}
  }
+ return art_output
 }
+
+
 
 func Mapper(file []byte) map[rune][]string {
 words := []string{}

@@ -12,6 +12,7 @@ func main() {
 		panic(err)
 	}
 	mapper := ascii_art.Mapper(file[1:])
-	ascii_art.PrintBanner(str, mapper)
+	art := ascii_art.PrintBanner(str, mapper)
+	fmt.Print(art)
 	fmt.Println()
 }

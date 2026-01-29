@@ -14,5 +14,4 @@ func main() {
 	mapper := ascii_art.Mapper(file[1:])
 	art := ascii_art.PrintBanner(str, mapper)
 	fmt.Print(art)
-	fmt.Println()
 }

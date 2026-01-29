@@ -1,14 +1,11 @@
 package ascii_art
 
-
-
-func GenerateASCIIArt(text string) string {
-	// Placeholder implementation
-	return "ASCII Art for: " + text
-}
-
 func PrintBanner(str string, mapper map[rune][]string) string {
 	//Handle  separator i.e '\n'
+	if str == "" {
+		return ""
+	}
+
 strs := []string{}
 tempname := ""
 
@@ -52,7 +49,7 @@ art_output := ""
 	}
 	}
  }
- return art_output
+ return art_output + "\n"
 }
 
 
@@ -85,7 +82,7 @@ mapper := make(map[rune][]string)
 		}
 	} 
 
-
+	
 	return mapper	
 
 }

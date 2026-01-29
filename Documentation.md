@@ -126,9 +126,9 @@ This project helps in understanding:
 
 ## Author
 
-Flovian Atieno
-Faisal Imali
-Janet Odalo
+### Flovian Atieno
+### Faisal Imali
+### Janet Odalo
 ---
 
 ## License
